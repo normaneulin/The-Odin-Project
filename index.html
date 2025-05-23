@@ -1,11 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <title>My First Webpage</title>
-  </head>
-  <body>
-    <h1>Hello, world!</h1>
-    <p>This is my first webpage hosted on GitHub Pages.</p>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My First Webpage</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background-color: #007acc;
+      color: white;
+      padding: 1rem 2rem;
+    }
+
+    header h1 {
+      font-size: 1.8rem;
+    }
+
+    nav {
+      margin-top: 0.5rem;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-right: 1.5rem;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      padding: 2rem;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    section {
+      margin-bottom: 2rem;
+    }
+
+    footer {
+      background-color: #333;
+      color: #ddd;
+      text-align: center;
+      padding: 1rem;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+
+    @media (max-width: 600px) {
+      nav a {
+        display: block;
+        margin-bottom: 0.5rem;
+      }
+
+      footer {
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>My Portfolio</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Projects</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Welcome!</h2>
+      <p>Thank you for visiting my website. This is my first project hosted on GitHub Pages. I am currently learning web development and building my portfolio.</p>
+    </section>
+
+    <section>
+      <h2>What I'm Working On</h2>
+      <ul>
+        <li>Personal website and blog</li>
+        <li>Java and Python projects</li>
+        <li>Learning front-end frameworks like React</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Get in Touch</h2>
+      <p>If you'd like to connect, feel free to <a href="mailto:youremail@example.com">email me</a>.</p>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Eulin Norman. All rights reserved.
+  </footer>
+
+</body>
 </html>
